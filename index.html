@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money manage</title>
+    <!-- link bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- link pure css     -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    
+    <!-- start money mansged app  -->
+
+
+
+        <main>
+            <section class="money_managed">
+                <div class="container-fluid">
+                    <h1 class="title text-center mt-2 py-4">🤑 Monthly Money Management 🤑</h1>
+                    <div class="row w-100 ">
+                        <div class="col-lg-6 col-md-6 col-sm-12" >
+                            <div class="cover_image mb-lg-0 mb-md-0 mb-sm-4 mb-4">
+                                <img class="img-fluid cover_image  rounded-3"   src="./image/perfact size.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div id="form" class="calculation_part">
+                                <form id="form" action="#" class="w-75 mx-auto">
+                                    <h2 class="text-center">Income</h2>
+                                    <div class="inputControl mb-3" action="#">
+                                        <label for="income">Income</label>
+                                        <input class="w-100 main_sellery" type="text" placeholder="Your sellery " required>
+                                        <div class="error"></div>
+                                    </div>
+                                    <h2 class="text-center my-2">Expenses</h2>
+                                    <div class="inputControl mb-3" action="#">
+                                        <label for="#">Food:</label>
+                                        <input class="w-100 mb-3 food_cust" type="text" placeholder="Food cost" required>
+                                        <div class="error"></div>
+                                    </div>
+                                    <div class="inputControl mb-3" action="#">
+                                        <label for="#">Rent:</label>
+                                        <input class="w-100 mb-3 Rent_cust" type="text" placeholder="Rent cost" required>
+                                        <div class="error"></div>
+                                    </div>
+                                    <div class="inputControl mb-3" action="#">
+                                        <label for="#">Clothes:</label>
+                                        <input class="w-100 mb-3 Clothes_cust" type="text" placeholder="Clothes cost" required>
+                                        <div class="error"></div>
+                                    </div>
+                                    <button type="submit" class="btn btn-custom calculate_Btn d-block my-3 mx-auto">Calculate</button>
+                                </form>
+                                <h4 class="text-center">Total Expenses: <span id="total_Expenses">0</span> </h3>
+                                <h3 class="text-center">Balance: <span id="Balance">0</span> </h3>
+
+                                <div class="save_many text-center my-4">
+                                   <form action="#">
+                                    <label for="#">Save:</label>
+                                    <input id="saveManeyAmount" class="w-25 p-1 text-center" type="number" placeholder="Save money" required>
+                                    <span class="mx-3">%</span>
+                                    <button id="saveManeyBtn" class="btn  btn-custom">Save</button>
+                                   </form>
+                                </div>
+                                <div id="saveingErrorSms" class="error text-center"></div>
+                                <h4 class="text-center">Remaining Balance: <span id="remainingBalance"> 0</span></h4>
+                                <h3 class="text-center">Saving Amount: <span id="TotalsavingAmount">0</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+    <!-- link bootstrap javascript  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
